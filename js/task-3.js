@@ -2,18 +2,18 @@
 
 class Storage {
   constructor(items) {
-    this._items = items;
+    this.items = items;
   }
 
   getItems() {
-    return this._items;
+    return this.items;
   }
   addItem(item) {
-    this._items.push(item);
+    this.items.push(item);
   }
   removeItem(item) {
-    if (this._items.includes(item)) {
-      this._items.splice(this._items.indexOf(item), 1);
+    if (this.items.includes(item)) {
+      this.items.splice(this.items.indexOf(item), 1);
     }
   }
 }
